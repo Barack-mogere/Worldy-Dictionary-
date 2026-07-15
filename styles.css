@@ -1,0 +1,48 @@
+.header {
+  height: 100px;          
+  display: flex;
+  align-items: center;    
+  border: 0.5px solid black;
+  border-radius: 5px;
+}
+
+.header img {
+  height: 200px;           
+  margin-left: 20px;      
+}
+
+.discover{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.discover p {
+    font-weight: 20;
+    font-size: small;
+}
+
+#Search {
+  gap: 6px;
+  align-items: center;
+ 
+}
+
+#Search input {
+  padding: 8px 12px;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+}
+
+#Search button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 9px;
+  background: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
+#Search button:hover {
+  background: #0056b3;
+}
