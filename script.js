@@ -53,4 +53,6 @@ saveBtn.addEventListener("click", function () {
       return;
     }
     favorites.push(currentWord);
+    savedWords.innerHTML = "";
+    favorites.forEach(function (word) {});
 });
