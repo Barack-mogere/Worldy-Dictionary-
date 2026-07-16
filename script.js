@@ -52,4 +52,5 @@ saveBtn.addEventListener("click", function () {
       alert("Search for a word first.");
       return;
     }
+    favorites.push(currentWord);
 });
