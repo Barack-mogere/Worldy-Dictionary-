@@ -2,6 +2,7 @@ const searchInput = document.getElementById("searchInput");
 const searchBtn = document.getElementById("searchBtn");
 const result = document.getElementById("result");
 const savedWords = document.getElementById("savedWords");
+const saveBtn = document.getElementById("saveBtn");
 
 
 searchBtn.addEventListener("click", function () {
