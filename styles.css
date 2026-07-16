@@ -2,8 +2,8 @@
   height: 100px;          
   display: flex;
   align-items: center;    
-  border: 0.5px solid black;
-  border-radius: 5px;
+ border-bottom: 0.5px solid rgb(184, 183, 183);
+  
 }
 
 .header img {

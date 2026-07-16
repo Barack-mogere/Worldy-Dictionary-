@@ -23,6 +23,11 @@ searchBtn.addEventListener("click", function () {
                 <p><strong>Part of Speech:</strong> ${partOfSpeech}</p>
                 <p><strong>Definition:</strong> ${definition}</p>
                 <p><strong>Example:</strong> ${example || "No example available."}</p>
+                <p><strong>Synonyms:</strong> ${
+                  synonyms.length > 0
+                    ? synonyms.join(", ")
+                    : "No synonyms available."
+                }</p>
             `;})
 
              .catch(error => {
