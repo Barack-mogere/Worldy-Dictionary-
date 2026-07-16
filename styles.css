@@ -46,3 +46,21 @@
 #Search button:hover {
   background: #0056b3;
 }
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+  
+}
+.content div{
+  border: 0.5px solid rgb(95, 95, 95);
+}
+
+.div1 {
+  width: 600px;
+}
+
+.div2 {
+  width: 300px;
+}
