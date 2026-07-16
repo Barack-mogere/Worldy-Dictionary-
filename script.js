@@ -8,6 +8,8 @@ const playAudio = document.getElementById("playAudio");
 let favorites = [];
 let currentWord = "";
 
+let audioURL = "";
+
 
 searchBtn.addEventListener("click", function () {
      const word = searchInput.value;
@@ -17,6 +19,14 @@ searchBtn.addEventListener("click", function () {
         .then((data) => {
            const wordFound = data[0].word;
                  currentWord = wordFound;
+                 audioURL = "";
+                 for (let phonetic of data[0].phonetics) {
+                   if (phonetic.audio) {
+                     audioURL = phonetic.audio;
+
+                     break;
+                   }
+                 }
            const phonetic = data[0].phonetic;
              const partOfSpeech = data[0].meanings[0].partOfSpeech;
            const definition = data[0].meanings[0].definitions[0].definition;
@@ -62,4 +72,14 @@ saveBtn.addEventListener("click", function () {
         savedWords.appendChild(li);
 
     });
+});
+
+playAudio.addEventListener("click", function () {
+    if (audioURL) {
+      const audio = new Audio(audioURL);
+
+      audio.play();
+    } else {
+      alert("No pronunciation available.");
+    }
 });
