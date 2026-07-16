@@ -13,7 +13,11 @@ searchBtn.addEventListener("click", function () {
               fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
          .then((response) => response.json())
         .then((data) => {
-           console.log(data);
+           const wordFound = data[0].word;
+           const phonetic = data[0].phonetic;
+           const partOfSpeech = data[0].meanings[0].partOfSpeech;
+           const definition = data[0].meanings[0].definitions[0].definition;
+           const example = data[0].meanings[0].definitions[0].example;
          });
      });
 
