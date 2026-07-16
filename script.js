@@ -48,5 +48,8 @@ searchBtn.addEventListener("click", function () {
 });
 
 saveBtn.addEventListener("click", function () {
-    
+    if (currentWord === "") {
+      alert("Search for a word first.");
+      return;
+    }
 });
