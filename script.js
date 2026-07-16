@@ -54,5 +54,11 @@ saveBtn.addEventListener("click", function () {
     }
     favorites.push(currentWord);
     savedWords.innerHTML = "";
-    favorites.forEach(function (word) {});
+    favorites.forEach(function (word) {
+
+        const li = document.createElement("li");
+        li.textContent = word;
+        savedWords.appendChild(li);
+
+    });
 });
