@@ -67,9 +67,15 @@
 
 #saveBtn{
   border-radius: 5px;
-  border: 0.3px solid black;
+  border: 0.3px solid rgb(114, 114, 114);
   margin-bottom: 8px;
   cursor: pointer;
   height: 50px;
+}
+#playAudio{
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0.1px solid rgb(165, 165, 165);
 }
 
