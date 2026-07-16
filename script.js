@@ -4,6 +4,9 @@ const result = document.getElementById("result");
 const savedWords = document.getElementById("savedWords");
 const saveBtn = document.getElementById("saveBtn");
 
+let favorites = [];
+let currentWord = "";
+
 
 searchBtn.addEventListener("click", function () {
      const word = searchInput.value;
