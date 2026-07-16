@@ -64,6 +64,10 @@ saveBtn.addEventListener("click", function () {
       alert("Search for a word first.");
       return;
     }
+    if (favorites.includes(currentWord)) {
+      alert("This word is already saved.");
+      return;
+    }
     favorites.push(currentWord);
     result.classList.add("saved");
     savedWords.innerHTML = "";
