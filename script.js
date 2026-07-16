@@ -13,6 +13,7 @@ let audioURL = "";
 
 searchBtn.addEventListener("click", function () {
      const word = searchInput.value;
+     result.classList.remove("saved");
 
               fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
          .then((response) => response.json())
@@ -64,6 +65,7 @@ saveBtn.addEventListener("click", function () {
       return;
     }
     favorites.push(currentWord);
+    result.classList.add("saved");
     savedWords.innerHTML = "";
     favorites.forEach(function (word) {
 
