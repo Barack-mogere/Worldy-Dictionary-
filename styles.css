@@ -1,30 +1,28 @@
 .header {
-  height: 100px;          
+  height: 100px;
   display: flex;
-  align-items: center;    
- border-bottom: 0.5px solid rgb(184, 183, 183);
-  
+  align-items: center;
+  border-bottom: 0.5px solid rgb(184, 183, 183);
 }
 
 .header img {
-  height: 200px;           
-  margin-left: 20px;      
+  height: 200px;
+  margin-left: 20px;
 }
 
-.discover{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.discover {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .discover p {
-    font-weight: 20;
-    font-size: small;
+  font-weight: 20;
+  font-size: small;
 }
 
 #Search {
   gap: 6px;
   align-items: center;
- 
 }
 
 #Search input {
@@ -38,7 +36,7 @@
   padding: 8px 16px;
   border: none;
   border-radius: 9px;
-  background: #007BFF;
+  background: #007bff;
   color: white;
   cursor: pointer;
 }
@@ -51,9 +49,8 @@
   justify-content: center;
   gap: 15px;
   margin-top: 40px;
-  
 }
-.content div{
+.content div {
   border: 0.5px solid rgb(95, 95, 95);
 }
 
@@ -65,23 +62,22 @@
   width: 300px;
 }
 
-#saveBtn{
+#saveBtn {
   border-radius: 5px;
   border: 0.3px solid rgb(114, 114, 114);
   margin-bottom: 8px;
   cursor: pointer;
   height: 50px;
 }
-#playAudio{
+#playAudio {
   height: 50px;
   border-radius: 5px;
   cursor: pointer;
   border: 0.1px solid rgb(165, 165, 165);
 }
 
-.saved{
-    border:3px solid green;
-    background:#eaffea;
-    transition:0.3s;
+.saved {
+  border: 3px solid green;
+  background: #eaffea;
+  transition: 0.3s;
 }
-
